@@ -15,6 +15,7 @@
             <img src="../assets/logo.png" class="d-none d-lg-block">
           </router-link>
         </div>
+        
         <ul class="navbar-nav">
           <li class="nav-item">
             <router-link class="nav-link " :to="{name:'shop'}">Shop</router-link>
