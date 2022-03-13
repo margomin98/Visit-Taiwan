@@ -53,7 +53,8 @@ const login = () =>{
 
 </script>
 
-<style>
+<style scoped>
+
 .login{
 margin-top: 100px;
     height:350px;

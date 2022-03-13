@@ -89,7 +89,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style >
   .shopTitle {
     text-decoration: none;
   }
@@ -153,6 +153,7 @@
     position: absolute;
     padding: 5px 20px 5px 20px;
     text-decoration: none;
+ 
   }
   .enter:hover {
     transform: scale(1.2, 1.2);
