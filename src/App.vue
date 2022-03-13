@@ -1,30 +1,81 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+    <Header />
+    <router-view/>
+    <Footer />
 </template>
 
+<script>
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
+
+import {
+    onMounted,
+    ref
+}
+
+from 'vue'
+
+import {
+    getAuth,
+    onAuthStateChanged,
+    signOut
+}
+
+from 'firebase/auth'
+
+export default {
+
+    name: 'App',
+    components: {
+        Header,
+        Footer
+    }
+
+    ,
+    setup() {
+        const isLoggedIn = ref(false);
+        let auth;
+
+        onMounted(() => {
+                auth = getAuth();
+
+                onAuthStateChanged(auth, (user) => {
+                        if (user) {
+                            isLoggedIn.value = true;
+                        } else {
+                            isLoggedIn.value = false;
+                        }
+                    }
+
+                );
+            }
+
+        );
+
+        const LogOut = () => {
+            signOut(auth).then(() => {
+                    router.push('/')
+                }
+
+            )
+        }
+    }
+}
+</script>
+
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+    font-family: 'Oswald', sans-serif;
 }
 
-nav {
-  padding: 30px;
+body {
+    padding: 0;
+    margin: 0;
+}
+ul li{
+list-style-type:none;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+    
 </style>
