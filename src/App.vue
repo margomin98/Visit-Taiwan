@@ -79,6 +79,8 @@ body {
 ul li{
 list-style-type:none;
 }
-
+.signupbtn,.loginbtn{
+    color:#000003
+}
     
 </style>
