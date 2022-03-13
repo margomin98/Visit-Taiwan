@@ -4,7 +4,7 @@
        <div class="container cartPage"  v-if='totalPrice !== 0'  >
 
         <div class="row">
-<div class="col-lg-8 col-md-6 bagSection">
+<div class="col-lg col-md bagSection">
 
         <p class="bag">Shopping Bag</p> 
           <div class="card" v-for='items in cartItems' :key='items.id' >
@@ -26,7 +26,7 @@
 </div>
                     <Summary v-bind:totalPrice='totalPrice' />
              </div>
-            <div class="col-lg-4 col-md bill ">
+            <div class="col-lg-6 bill ">
                 <div class="address col">
                     <div class="cartTitles d-flex justify-content-between">
                         Shipping Address <span @click='change' class="change">Change</span></div>

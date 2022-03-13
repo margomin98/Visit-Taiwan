@@ -37,7 +37,7 @@
               </div>
             </li>
             <li class="acc">
-              <router-link class="nav-link" :to="{name:'signup'}">Account</router-link>
+              <router-link class="nav-link" :to="{name:'signup'}" style="color:#c79b93">Account</router-link>
             </li>
           </ul>
         </div>
@@ -64,6 +64,7 @@
       </div>
     </div>
   </div>
+  
 </template>
 
 <script>
@@ -91,6 +92,7 @@
     background-color: #e2dcdb;
     border-top: 1px dotted grey;
     justify-content: space-between;
+  
   }
   .cartBoard {
     padding-top: 12px;
@@ -107,10 +109,12 @@
   .nav-item {
     padding: 10px 0 0 10px;
     font-size: 20px;
-  }
-  .nav-link:visited {
     color: #c79b93;
+    :hover{
+      color:#c79b93;
+    }
   }
+
   .section_2 {
     display: flex;
     margin-left: auto;

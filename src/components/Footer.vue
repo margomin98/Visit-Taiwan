@@ -11,8 +11,7 @@
                 <p class="address">9F., No. 290, Sec. 4, Zhongxiao E. Rd., <br> Da’an District, Taipei City 106433, Taiwan (R.O.C.)</p>
                 <p>Tel</p>
                 <p class="address">+886-2-2349-1500<br>
-                </p>
-                <div class="d-flex d-block d-sm-none">
+                <div class="pb-5 d-block d-sm-none">
                     <a href="https://www.facebook.com/">
                         <img src="../assets/facebook.png" alt="facebook"></a>
                     <a href="https://www.instagram.com/" class="ig mx-2">
@@ -20,12 +19,14 @@
                     <a href="https://www.youtube.com/">
                         <img src="../assets/youtube.png" alt="youtube"></a>
                 </div>
+                </p>
+         
             </div>
         </div>
     </div>
     <div class="container-fluid ">
-        <div class="row ">
-            <div class="col social d-flex justify-content-center">
+        <div class="row  d-none d-md-block">
+            <div class="col social  d-flex justify-content-center">
                 <a href="https://www.facebook.com/">
                     <img src="../assets/facebook.png" alt="facebook"></a>
                 <a href="https://www.instagram.com/" class="ig mx-2">

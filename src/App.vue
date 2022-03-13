@@ -73,7 +73,7 @@ export default {
 }
 
 body {
-    padding: 0;
+    padding:0;
     margin: 0;
 }
 ul li{
