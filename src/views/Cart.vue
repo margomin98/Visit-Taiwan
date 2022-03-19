@@ -208,7 +208,7 @@ swal("Thank you for your purchase!").then((value) => {
         width: auto;
         background-color: #72442b41;
         padding: 20px;
-        margin: auto
+      
     }
     .checkOut {
         border: none;
