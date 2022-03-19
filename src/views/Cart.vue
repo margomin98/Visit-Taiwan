@@ -4,7 +4,7 @@
        <div class="container cartPage"  v-if='totalPrice !== 0'  >
 
         <div class="row">
-<div class="col-lg col-md bagSection">
+<div class="col-lg col-md-5 bagSection">
 
         <p class="bag">Shopping Bag</p> 
           <div class="card" v-for='items in cartItems' :key='items.id' >
@@ -204,7 +204,7 @@ swal("Thank you for your purchase!").then((value) => {
         margin-top: 100px;
     }
     .bill {
-        height: auto;
+        height:750px;
         width: auto;
         background-color: #72442b41;
         padding: 20px;
