@@ -47,7 +47,7 @@
   </header>
   <div class="container-fluid">
     <div class="row">
-      <div class="col hgBoard d-lg-none d-md-none fixed-bottom  d-flex">
+      <div class="col hgBoard d-lg-none  fixed-bottom  d-flex">
         <div class="cartBoard position-relative">
           <router-link id="cart" class="cartBtn  " :to="{name:'cart'}">
             <img src="../assets/cart.png" class='cart  '>

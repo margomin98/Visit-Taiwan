@@ -26,7 +26,7 @@
 </div>
                     <Summary v-bind:totalPrice='totalPrice' />
              </div>
-            <div class="col-lg-6 bill ">
+            <div class="col-lg-6git add . bill ">
                 <div class="address col">
                     <div class="cartTitles d-flex justify-content-between">
                         Shipping Address <span @click='change' class="change">Change</span></div>
