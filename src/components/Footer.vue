@@ -25,7 +25,7 @@
         </div>
     </div>
     <div class="container-fluid ">
-        <div class="row  d-lg-none d-md-none">
+        <div class="row d-xs-none">
             <div class="col social  d-flex justify-content-center">
                 <a href="https://www.facebook.com/">
                     <img src="../assets/facebook.png" alt="facebook"></a>
